@@ -37,10 +37,10 @@ h2:before{content:"> ";color:#ffd166}
 .contact a:hover{border-color:#ffd166}
 footer{text-align:center;font:9px Dogica,monospace;color:#5d5d75;padding:0 0 40px}
 
-.dollar{position:absolute;left:50%;top:13vh;z-index:1;width:min(640px,82vw);transform:translateX(-50%) rotate(-4deg);
-  box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 0 3px #0b2a12;image-rendering:auto;animation:bill 5s ease-in-out infinite}
-@keyframes bill{50%{transform:translateX(-50%) translateY(-10px) rotate(-2deg)}}
-@media (max-height:700px){.dollar{top:8vh;width:min(520px,80vw)}}
-.contactwrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:18px;align-items:start}
-.dollar-sm{width:100%;border:3px solid #0b2a12;box-shadow:4px 4px 0 #000;transform:rotate(-2deg)}
+.portrait{position:absolute;left:50%;top:8vh;z-index:1;height:min(52vh,560px);width:auto;transform:translateX(-50%) rotate(-3deg);
+  border:4px solid #fff;box-shadow:8px 8px 0 #000,0 20px 60px rgba(0,0,0,.6);image-rendering:pixelated;animation:pframe 5s ease-in-out infinite}
+@keyframes pframe{50%{transform:translateX(-50%) translateY(-10px) rotate(-1.5deg)}}
+@media (max-height:700px){.portrait{top:6vh;height:44vh}}
+.contactwrap{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:18px;align-items:start}
+.portrait-sm{width:100%;max-width:300px;border:3px solid #fff;box-shadow:4px 4px 0 #000;transform:rotate(-2deg);image-rendering:pixelated}
 @media (max-width:760px){.contactwrap{grid-template-columns:1fr}}
